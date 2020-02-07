@@ -1,0 +1,41 @@
+{
+  "name": "webpack-deps-graph-visualizer",
+  "version": "1.0.0",
+  "description": "Visualizing wepack's dependency tree",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pirosikick/webpack-deps-graph-visualizer.git"
+  },
+  "keywords": [],
+  "author": "Hiroyuki ANAI <pirosikick@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pirosikick/webpack-deps-graph-visualizer/issues"
+  },
+  "homepage": "https://github.com/pirosikick/webpack-deps-graph-visualizer#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.0",
+    "@types/webpack": "^4.41.5",
+    "husky": "^4.2.1",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "typescript": "^3.8.1-rc",
+    "webpack": "^4.41.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,md,json}": "prettier --write"
+  }
+}
